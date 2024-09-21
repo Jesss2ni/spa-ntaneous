@@ -49,7 +49,7 @@ const Login = () => {
     if ((isOtpSent || isOtpSentForSignup) && timeLeft > 0) {
       const timer = setInterval(() => {
         setTimeLeft((prevTime) => prevTime - 1);
-      }, 10);
+      }, 1000);
       return () => clearInterval(timer);
     } else if (timeLeft === 0) {
       setCanResend(true);

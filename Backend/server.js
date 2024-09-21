@@ -1,13 +1,13 @@
 const express = require('express');
-const mysql = require('mysql2');
-const cors = require('cors');
-const multer = require('multer');
-const path = require('path');
+const mysql = require('mysql2'); // npm install mysql2
+const cors = require('cors'); // npm install cors
+const multer = require('multer'); // npm install multer
+const path = require('path'); // path is a built-in Node.js module, no need to install
 const session = require('express-session'); // npm install express-session
 const MySQLStore = require('express-mysql-session')(session); // npm install express-mysql-session
 const bcrypt = require('bcrypt'); //install bcrypt using this commant 'npm install bcrypt'
-const nodemailer = require('nodemailer');
-const crypto = require('crypto');
+const nodemailer = require('nodemailer'); // npm install nodemailer
+const crypto = require('crypto'); // crypto is a built-in Node.js module, no need to install
 
 // Setup nodemailer transporter for sending emails
 const transporter = nodemailer.createTransport({
